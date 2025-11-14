@@ -2,6 +2,9 @@
 
 import random
 
+score = 0  # Score system added in score-system branch
+
+
 def play():
     print("Welcome to Rock, Paper, Scissors!")
     print("----------------------------------")
@@ -28,6 +31,8 @@ def play():
             (user_choice == "scissors" and computer_choice == "paper")
         ):
             print("You win!\n")
+            score += 1
+            print(f"Your Score: {score}\n")
         else:
             print("You lose!\n")
 
@@ -39,3 +44,4 @@ def play():
 
 if __name__ == "__main__":
     play()
+
