@@ -1,4 +1,5 @@
 # I acknowledge the use of ChatGPT (OpenAI, GPT-5.1) to co-create this file.
+# GUI version updated in feature branch
 
 import random
 import tkinter as tk
@@ -44,3 +45,4 @@ btn_scissors = tk.Button(root, text="Scissors", width=15, command=lambda: play("
 btn_scissors.pack(pady=5)
 
 root.mainloop()
+
