@@ -1,5 +1,6 @@
 # I acknowledge the use of ChatGPT (OpenAI, GPT-5.1) to co-create this file.
 # GUI version updated in feature branch
+# UI update added from the ui branch
 
 import random
 import tkinter as tk
@@ -29,6 +30,7 @@ def play(user_choice):
 
 # Main window
 root = tk.Tk()
+root.configure(bg="lightyellow")  # Background color updated in ui branch
 root.title("Rock Paper Scissors Game")
 root.geometry("300x300")
 
@@ -45,4 +47,5 @@ btn_scissors = tk.Button(root, text="Scissors", width=15, command=lambda: play("
 btn_scissors.pack(pady=5)
 
 root.mainloop()
+
 
